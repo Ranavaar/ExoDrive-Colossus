@@ -36,7 +36,6 @@ namespace Deforestation.UI
 		private ColorAdjustments _colorAdjustments;
 		[Header("Message")]
 		[SerializeField] private GameObject _warningPanel;
-		[SerializeField] private GameObject _finalPanel;
 		[Header("Inventory")]
 		[SerializeField] private TextMeshProUGUI _crystal1Text;
 		[SerializeField] private TextMeshProUGUI _crystal2Text;
@@ -46,6 +45,12 @@ namespace Deforestation.UI
 		[Header("Live")]
 		[SerializeField] private Slider _machineSlider;
 		[SerializeField] private Slider _playerSlider;
+		[Header("FinalGame")]
+		[SerializeField] private GameObject _finalPanel;
+		[SerializeField] private TextMeshProUGUI _timeText;
+		[SerializeField] private TextMeshProUGUI _crystalGreenText;
+		[SerializeField] private TextMeshProUGUI _crystalBlueText;
+		[SerializeField] private TextMeshProUGUI _crystalRedText;
 
 		private bool _settingsOn = false;
 		private bool _menuOn = false;
@@ -58,12 +63,14 @@ namespace Deforestation.UI
 			_menuPanel.SetActive(false);
 			_settingsPanel.SetActive(false);
 			_warningPanel.SetActive(false);
+			_finalPanel.SetActive(false);
 
+			GameController.Instance.OnFinalGame += EndGame;
+			GameController.Instance.OnWarningPanelOn += WarningPanelOn;
 			//My Events
 			_inventory.OnInventoryUpdated += UpdateUIInventory;
 			_interactionSystem.OnShowInteraction += ShowInteraction;
 			_interactionSystem.OnHideInteraction += HideInteraction;
-			GameController.Instance.OnWarningPanelOn += WarningPanelOn;
 			//Menu Events
 			_resumeButton.onClick.AddListener(ResumeGame);
 			_resetButton.onClick.AddListener(ResetGame);
@@ -201,6 +208,23 @@ namespace Deforestation.UI
 					_mainLight.shadowStrength = 1f;
 					break;
 			}
+		}
+		private void EndGame()
+		{
+			Time.timeScale = 0;
+			_finalPanel.SetActive(true);
+			_crystalGreenText.text = _inventory.InventoryStack[RecolectableType.ShootingCrystal].ToString();
+			_crystalBlueText.text = _inventory.InventoryStack[RecolectableType.DrivingCrystal].ToString();
+			_crystalRedText.text = _inventory.InventoryStack[RecolectableType.JumpingCrystal].ToString();
+
+			float totalSeconds = Time.time;
+
+			int hours = Mathf.FloorToInt(totalSeconds / 3600f);
+			int minutes = Mathf.FloorToInt((totalSeconds % 3600f) / 60f);
+			int seconds = Mathf.FloorToInt(totalSeconds % 60f);
+
+			_timeText.text = "Time Score (H/M/S): " + hours + ":" + minutes + ":" + seconds;
+
 		}
 		#endregion
 	}
