@@ -11,6 +11,7 @@ namespace Deforestation.Machine
 		public HealthSystem HealthSystem => _health;
 		public WeaponController WeaponController;
 		public Action<bool> OnMachineDriveChange;
+		
 		#endregion
 
 		#region Fields
@@ -39,16 +40,14 @@ namespace Deforestation.Machine
 		private void OnTriggerEnter(Collider other)
 		{
 			if (other.CompareTag("Water"))
-			{
 				GameController.Instance.OnWarningPanelOn?.Invoke(true);
-			}
+			if (other.CompareTag("Final"))
+				GameController.Instance.OnFinalGame?.Invoke();
 		}
 		private void OnTriggerExit(Collider other)
 		{
 			if (other.CompareTag("Water"))
-			{
 				GameController.Instance.OnWarningPanelOn?.Invoke(false);
-			}
 		}
 
 		#endregion

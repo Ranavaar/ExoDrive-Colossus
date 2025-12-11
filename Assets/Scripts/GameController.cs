@@ -28,6 +28,7 @@ namespace Deforestation
 		//Events
 		public Action<bool> OnMachineModeChange;
 		public Action<bool> OnWarningPanelOn;
+		public Action OnFinalGame;
 
 		public bool MachineModeOn
 		{

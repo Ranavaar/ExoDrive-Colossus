@@ -50,16 +50,14 @@ namespace Deforastation.Player
 		private void OnTriggerEnter(Collider other)
 		{
 			if (other.CompareTag("Water"))
-			{
 				GameController.Instance.OnWarningPanelOn?.Invoke(true);
-			}
+			if (other.CompareTag("Final"))
+				GameController.Instance.OnFinalGame?.Invoke();
 		}
 		private void OnTriggerExit(Collider other)
 		{
 			if (other.CompareTag("Water"))
-			{
 				GameController.Instance.OnWarningPanelOn?.Invoke(false);
-			}
 		}
 		#endregion
 
