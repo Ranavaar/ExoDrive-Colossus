@@ -29,7 +29,6 @@ namespace Deforestation
 			if (_instance == null)
 			{
 				_instance = this as T;
-				DontDestroyOnLoad(this.gameObject);
 			}
 			else
 			{

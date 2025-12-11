@@ -1,25 +1,32 @@
 using UnityEngine;
 using System;
+using System.Collections;
 namespace Deforestation.Interaction
 {
+	#region Enum
 	public enum MachineInteractionType
 	{
 		Door,
 		Stairs,
 		Machine
 	}
+	#endregion
+
 	public class MachineInteraction : MonoBehaviour, IInteractable
 	{
-		#region Properties
-		#endregion
-
 		#region Fields
 		[SerializeField] protected MachineInteractionType _type;
 		[SerializeField] protected Transform _target;
-
+		[SerializeField] protected Transform _initialPos;
 		[SerializeField] protected InteractableInfo _interactableInfo;
+		#endregion
 
-
+		#region Unity Callbacks
+		private void Start()
+		{
+			if (_initialPos == null)
+				return;
+		}
 		#endregion
 
 		#region Public Methods
@@ -33,12 +40,10 @@ namespace Deforestation.Interaction
 		{
 			if (_type == MachineInteractionType.Door)
 			{
-				//Move Door
-				transform.position = _target.position;
+				StartCoroutine(DoorRoutine());
 			}
 			if (_type == MachineInteractionType.Stairs)
 			{
-				//Teleport Player
 				GameController.Instance.TeleportPlayer(_target.position);
 			}
 			if (_type == MachineInteractionType.Machine)
@@ -48,6 +53,15 @@ namespace Deforestation.Interaction
 		}
 
 		#endregion
+
+		private IEnumerator DoorRoutine()
+		{
+			transform.position = _target.position;
+
+			yield return new WaitForSeconds(5);
+
+			transform.position = _initialPos.position;
+		}
 	}
 
 }

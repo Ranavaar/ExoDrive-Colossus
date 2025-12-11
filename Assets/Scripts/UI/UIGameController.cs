@@ -1,62 +1,92 @@
-using UnityEngine;
-using TMPro;
-using Deforestation.Recolectables;
-using System;
 using Deforestation.Interaction;
-using UnityEngine.UI;
+using Deforestation.Recolectables;
+using TMPro;
+using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace Deforestation.UI
 {
 	public class UIGameController : MonoBehaviour
 	{
-		#region Properties
-		#endregion
-
 		#region Fields
-		private Inventory _inventory => GameController.Instance.Inventory;		
+		private Inventory _inventory => GameController.Instance.Inventory;
 		private InteractionSystem _interactionSystem => GameController.Instance.InteractionSystem;
 
-		[Header("Settings")]
-		[SerializeField] private AudioMixer _mixer;
+		[Header("MenuPause")]
+		[SerializeField] private GameObject _menuPanel;
+		[SerializeField] private Button _resumeButton;
+		[SerializeField] private Button _resetButton;
 		[SerializeField] private Button _settingsButton;
+		[SerializeField] private Button _exitButton;
+		[Header("Settings")]
+		[SerializeField] private Button _closeButton;
+		[SerializeField] private AudioMixer _mixer;
 		[SerializeField] private GameObject _settingsPanel;
+		[SerializeField] private Slider _masterVolumeSlider;
 		[SerializeField] private Slider _musicSlider;
 		[SerializeField] private Slider _fxSlider;
-
+		[SerializeField] private Slider _brightness;
+		[SerializeField] private Slider _shadows;
+		[SerializeField] private Volume _postProcessVolume;
+		[SerializeField] private Light _mainLight;
+		private ColorAdjustments _colorAdjustments;
+		[Header("Message")]
+		[SerializeField] private GameObject _warningPanel;
+		[SerializeField] private GameObject _finalPanel;
 		[Header("Inventory")]
 		[SerializeField] private TextMeshProUGUI _crystal1Text;
 		[SerializeField] private TextMeshProUGUI _crystal2Text;
-		[Header("Interacytion")]
+		[SerializeField] private TextMeshProUGUI _crystal3Text;
+		[Header("Interaction")]
 		[SerializeField] private InteractionPanel _interactionPanel;
 		[Header("Live")]
 		[SerializeField] private Slider _machineSlider;
 		[SerializeField] private Slider _playerSlider;
 
 		private bool _settingsOn = false;
+		private bool _menuOn = false;
 		private
 		#endregion
 
 		#region Unity Callbacks
-		// Start is called before the first frame update
 		void Start()
 		{
+			_menuPanel.SetActive(false);
 			_settingsPanel.SetActive(false);
+			_warningPanel.SetActive(false);
 
 			//My Events
 			_inventory.OnInventoryUpdated += UpdateUIInventory;
 			_interactionSystem.OnShowInteraction += ShowInteraction;
 			_interactionSystem.OnHideInteraction += HideInteraction;
+			GameController.Instance.OnWarningPanelOn += WarningPanelOn;
+			//Menu Events
+			_resumeButton.onClick.AddListener(ResumeGame);
+			_resetButton.onClick.AddListener(ResetGame);
+			_settingsButton.onClick.AddListener(SettingsGame);
+			_exitButton.onClick.AddListener(ExitGame);
 			//Settings events
-			_settingsButton.onClick.AddListener(SwitchSettings);
+			_closeButton.onClick.AddListener(SettingsGame);
+			_masterVolumeSlider.onValueChanged.AddListener(MasterVolumeChange);
 			_musicSlider.onValueChanged.AddListener(MusicVolumeChange);
 			_fxSlider.onValueChanged.AddListener(FXVolumeChange);
-		}		
+			_brightness.onValueChanged.AddListener(BrightnessChange);
+			_shadows.onValueChanged.AddListener(ShadowsChange);
 
-		private void SwitchSettings()
+			_postProcessVolume.profile.TryGet(out _colorAdjustments);
+		}
+		public void MenuOn()
 		{
-			_settingsOn = !_settingsOn;
-			_settingsPanel.SetActive(_settingsOn);
+			_menuOn = !_menuOn;
+			_menuPanel.SetActive(_menuOn);
+			if (_menuOn)
+				Time.timeScale = 0;
+			else
+				Time.timeScale = 1;
 		}
 
 		internal void UpdateMachineHealth(float value)
@@ -68,7 +98,6 @@ namespace Deforestation.UI
 		{
 			_playerSlider.value = value;
 		}
-
 		#endregion
 
 		#region Public Methods
@@ -79,22 +108,45 @@ namespace Deforestation.UI
 		public void HideInteraction()
 		{
 			_interactionPanel.Hide();
-
 		}
-
+		public void WarningPanelOn(bool PanelOn)
+		{
+			_warningPanel.SetActive(PanelOn);
+		}
 		#endregion
 
 		#region Private Methods
 		private void UpdateUIInventory()
 		{
-			if (_inventory.InventoryStack.ContainsKey(RecolectableType.SuperCrystal))
-				_crystal1Text.text = _inventory.InventoryStack[RecolectableType.SuperCrystal].ToString();
+			if (_inventory.InventoryStack.ContainsKey(RecolectableType.ShootingCrystal))
+				_crystal1Text.text = _inventory.InventoryStack[RecolectableType.ShootingCrystal].ToString();
 			else
 				_crystal1Text.text = "0";
-			if (_inventory.InventoryStack.ContainsKey(RecolectableType.HyperCrystal))
-				_crystal2Text.text = _inventory.InventoryStack[RecolectableType.HyperCrystal].ToString();
+			if (_inventory.InventoryStack.ContainsKey(RecolectableType.DrivingCrystal))
+				_crystal2Text.text = _inventory.InventoryStack[RecolectableType.DrivingCrystal].ToString();
 			else
 				_crystal2Text.text = "0";
+			if (_inventory.InventoryStack.ContainsKey(RecolectableType.JumpingCrystal))
+				_crystal3Text.text = _inventory.InventoryStack[RecolectableType.JumpingCrystal].ToString();
+			else
+				_crystal3Text.text = "0";
+		}
+		private void ResumeGame()
+		{
+			MenuOn();
+		}
+		private void ResetGame()
+		{
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		}
+		private void SettingsGame()
+		{
+			_settingsOn = !_settingsOn;
+			_settingsPanel.SetActive(_settingsOn);
+		}
+		private void ExitGame()
+		{
+			Application.Quit();
 		}
 
 		private void FXVolumeChange(float value)
@@ -106,6 +158,49 @@ namespace Deforestation.UI
 		{
 			_mixer.SetFloat("MusicVolume", Mathf.Lerp(-60f, 0f, value));
 
+		}
+		private void MasterVolumeChange(float value)
+		{
+			_mixer.SetFloat("MasterVolume", Mathf.Lerp(-60f, 0f, value));
+
+		}
+		private void BrightnessChange(float value)
+		{
+			if (_colorAdjustments == null)
+				return;
+
+			float minExposure = -2f;
+			float maxExposure = 2f;
+
+			_colorAdjustments.postExposure.value = Mathf.Lerp(minExposure, maxExposure, value);
+		}
+
+		private void ShadowsChange(float value)
+		{
+			if (_mainLight == null)
+			{
+				return;
+			}
+
+			int level = Mathf.RoundToInt(value);
+
+			switch (level)
+			{
+				case 0:
+					_mainLight.shadows = LightShadows.None;
+					break;
+
+				case 1:
+					_mainLight.shadows = LightShadows.Soft;
+					_mainLight.shadowStrength = 0.5f;
+					break;
+
+				case 2:
+				default:
+					_mainLight.shadows = LightShadows.Soft;
+					_mainLight.shadowStrength = 1f;
+					break;
+			}
 		}
 		#endregion
 	}

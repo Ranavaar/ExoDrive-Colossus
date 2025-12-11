@@ -7,9 +7,6 @@ namespace Deforestation.UI
 
 	public class InteractionPanel : MonoBehaviour
 	{
-		#region Properties
-		#endregion
-
 		#region Fields
 		[SerializeField] private TextMeshProUGUI _textPanel;
 		#endregion
@@ -20,8 +17,6 @@ namespace Deforestation.UI
 		{
 			gameObject.SetActive(false);
 		}
-
-
 		#endregion
 
 		#region Public Methods
@@ -38,7 +33,5 @@ namespace Deforestation.UI
 		}
 		#endregion
 
-		#region Private Methods
-		#endregion
 	}
 }

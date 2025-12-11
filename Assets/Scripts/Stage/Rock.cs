@@ -8,9 +8,6 @@ namespace Deforestation
 	[RequireComponent(typeof(HealthSystem))]
 	public class Rock : MonoBehaviour
 	{
-		#region Properties
-		#endregion
-
 		#region Fields
 		[Header("Prefabs")]
 		[SerializeField]
@@ -28,7 +25,6 @@ namespace Deforestation
 		#endregion
 
 		#region Unity Callbacks
-		// Start is called before the first frame update
 		void Awake()
 		{
 			_health = GetComponent<HealthSystem>();
@@ -63,9 +59,6 @@ namespace Deforestation
 			float spawnRadiusRandom = Random.Range(0, _spawnRadius);
 			return transform.position + randomDirection * spawnRadiusRandom;
 		}
-		#endregion
-
-		#region Public Methods
 		#endregion
 	}
 }

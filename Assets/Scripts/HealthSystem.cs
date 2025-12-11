@@ -24,9 +24,7 @@ namespace Deforestation
 			OnHealthChanged?.Invoke(_currentHealth);
 
 			if (_currentHealth <= 0)
-			{
 				Die();
-			}
 		}
 
 		public void Heal(float amount)
@@ -45,8 +43,8 @@ namespace Deforestation
 
 		private void Die()
 		{
-			OnDeath?.Invoke();
-			// Aquí puedes añadir lógica adicional para la muerte, como destruir el objeto.
+			if (_currentHealth <= 0)
+				OnDeath?.Invoke();
 		}
 	}
 

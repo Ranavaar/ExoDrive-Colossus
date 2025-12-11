@@ -11,7 +11,8 @@ namespace Deforestation.Dinosaurus
 		protected Animator _anim;
 		protected NavMeshAgent _agent;
 		protected HealthSystem _health;
-		
+		protected bool _isDeath;
+		protected float _deathTime = 60;
 		#endregion
 
 		#region Properties
@@ -26,20 +27,19 @@ namespace Deforestation.Dinosaurus
 			_agent = GetComponent<NavMeshAgent>();
 
 			_health.OnDeath += Die;
+			_isDeath = false;
 		}
 
 		private void Die()
 		{
-			_anim.SetTrigger("Die");
-			Destroy(_agent);
-			Destroy(this);
+			if (!_isDeath)
+			{
+				_anim.SetTrigger("Die");
+				_isDeath = true;
+			}
+			if (_deathTime <= 0)
+				Destroy(gameObject);
 		}
-		#endregion
-
-		#region Private Methods
-		#endregion
-
-		#region Public Methods
 		#endregion
 
 	}

@@ -1,6 +1,6 @@
-using UnityEngine;
-using System;
 using Deforestation.Machine.Weapon;
+using System;
+using UnityEngine;
 
 namespace Deforestation.Machine
 {
@@ -11,14 +11,12 @@ namespace Deforestation.Machine
 		public HealthSystem HealthSystem => _health;
 		public WeaponController WeaponController;
 		public Action<bool> OnMachineDriveChange;
-
 		#endregion
 
 		#region Fields
 		private HealthSystem _health;
 		private MachineMovement _movement;
 		private Animator _anim;
-
 		#endregion
 
 		#region Unity Callbacks
@@ -27,23 +25,31 @@ namespace Deforestation.Machine
 			_health = GetComponent<HealthSystem>();
 			_movement = GetComponent<MachineMovement>();
 			_anim = GetComponent<Animator>();
-
 		}
-		// Start is called before the first frame update
 		void Start()
 		{
 			_movement.enabled = false;
+
 		}
 
-		// Update is called once per frame
 		void Update()
 		{
-			//TODO: Mover a Input System
-			if (Input.GetKeyUp(KeyCode.Escape))
+			
+		}
+		private void OnTriggerEnter(Collider other)
+		{
+			if (other.CompareTag("Water"))
 			{
-				StopDriving();
+				GameController.Instance.OnWarningPanelOn?.Invoke(true);
 			}
-		}		
+		}
+		private void OnTriggerExit(Collider other)
+		{
+			if (other.CompareTag("Water"))
+			{
+				GameController.Instance.OnWarningPanelOn?.Invoke(false);
+			}
+		}
 
 		#endregion
 
@@ -73,6 +79,7 @@ namespace Deforestation.Machine
 		#endregion
 
 		#region Private Methods
+		
 		#endregion
 	}
 

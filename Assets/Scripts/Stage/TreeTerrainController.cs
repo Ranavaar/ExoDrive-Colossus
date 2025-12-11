@@ -19,11 +19,11 @@ namespace Deforestation
 		#endregion
 
 		#region Unity Callbacks
-		// Start is called before the first frame update
 		void Start()
 		{
 			_terrain = Terrain.activeTerrain;
-			_trees = _terrain.terrainData.treeInstances;
+			_trees = _terrain.terrainData.treeInstances ?? new TreeInstance[0];
+
 
 			InitializeTrees();
 		}
@@ -42,6 +42,16 @@ namespace Deforestation
 
 		public GameObject DestroyTree(int i, Vector3 treeWorldPos)
 		{
+			Tree detector = GetDetectorByIndex(i);
+			if (detector != null)
+			{
+				if (detector.TryGetComponent<Collider>(out var col))
+					col.enabled = false;
+
+				detector.Index = -1;
+
+				Destroy(detector.gameObject);
+			}
 			//create tree
 			Tree newTree = Instantiate(_treePrefab, treeWorldPos, Quaternion.identity);
 
@@ -51,7 +61,9 @@ namespace Deforestation
 
 		void OnDestroy()
 		{
-			_terrain.terrainData.treeInstances = _trees;
+			if (_terrain != null && _trees != null)
+				_terrain.terrainData.treeInstances = _trees;
+
 		}
 		#endregion
 
@@ -62,15 +74,32 @@ namespace Deforestation
 		}
 		public void RemoveTreeFromTerrain(int index)
 		{
-			//TODO: Reasignar todos los indices de todos los tree detectors.
 			List<TreeInstance> trees = new List<TreeInstance>(_terrain.terrainData.treeInstances);
+			if (index < 0 || index >= trees.Count)
+			{
+				return;
+			}
 			trees.RemoveAt(index);
 			_terrain.terrainData.treeInstances = trees.ToArray();
+			Tree[] detectors = GetComponentsInChildren<Tree>();
+
+			foreach (Tree detector in detectors)
+			{
+				if (detector.Index > index)
+				{
+					detector.Index--;
+				}
+			}
 		}
 		#endregion
+		private Tree GetDetectorByIndex(int index)
+		{
+			foreach (Tree t in GetComponentsInChildren<Tree>())
+				if (t.Index == index)
+					return t;
 
-		#region Private Methods
+			return null;
+		}
 
-		#endregion
 	}
 }

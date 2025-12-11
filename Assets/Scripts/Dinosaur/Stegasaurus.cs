@@ -6,15 +6,14 @@ namespace Deforestation.Dinosaurus
 	{
 		#region Fields
 		[SerializeField] private float _radiusMovement = 100f;
-		#endregion
 
-		#region Properties
 		#endregion
 
 		#region Unity Callbacks	
 		private void Start()
 		{
 			_health.OnHealthChanged += Damage;
+			_isDeath = false;
 		}
 
 		void Update()
@@ -30,14 +29,16 @@ namespace Deforestation.Dinosaurus
 					}
 				}
 			}
+			if( _isDeath )
+				_deathTime -= Time.deltaTime;
 		}
-
 		#endregion
 
 		#region Private Methods
 		private void Damage(float health)
 		{
-			MoverAdestinoAleatorio();
+			if (!_isDeath)
+				MoverAdestinoAleatorio();
 		}
 		void MoverAdestinoAleatorio()
 		{
@@ -51,9 +52,5 @@ namespace Deforestation.Dinosaurus
 			_anim.SetBool("Fleeing", true);
 		}
 		#endregion
-
-		#region Public Methods
-		#endregion
-
 	}
 }

@@ -6,8 +6,9 @@ namespace Deforestation.Recolectables
 {
 	public enum RecolectableType
 	{
-		SuperCrystal,
-		HyperCrystal,
+		ShootingCrystal,
+		DrivingCrystal,
+		JumpingCrystal,
 	}
 	public class Recolectable : MonoBehaviour, IInteractable
 	{
@@ -46,9 +47,6 @@ namespace Deforestation.Recolectables
 		{
 			Destroy(gameObject);
 		}
-		#endregion
-
-		#region Private Methods
 		#endregion
 	}
 }

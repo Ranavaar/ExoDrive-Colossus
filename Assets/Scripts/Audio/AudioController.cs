@@ -13,6 +13,8 @@ namespace Deforestation.Audio
 		[SerializeField] private AudioSource _steps;
 		[SerializeField] private AudioSource _machineOn;
 		[SerializeField] private AudioSource _machineOff;
+		[SerializeField] private AudioSource _machineStandby;
+		[SerializeField] private AudioSource _machineAcceleration;
 		[SerializeField] private AudioSource _shoot;
 
 		[Space(10)]
@@ -20,6 +22,8 @@ namespace Deforestation.Audio
 		[Header("Music")]
 		[SerializeField] private AudioSource _musicMachine;
 		[SerializeField] private AudioSource _musicHuman;
+		private bool _isMove;
+		private bool _isDrive;
 		#endregion
 
 		#region Properties
@@ -31,7 +35,8 @@ namespace Deforestation.Audio
 			GameController.Instance.OnMachineModeChange += SetMachineMusicState;
 			GameController.Instance.MachineController.OnMachineDriveChange += SetMachineDriveEffect;
 			GameController.Instance.MachineController.WeaponController.OnMachineShoot += ShootFX;
-		}		
+			GameController.Instance.InputSystem.OnMove += Move;
+		}
 
 		private void Start()
 		{
@@ -40,15 +45,34 @@ namespace Deforestation.Audio
 
 		private void Update()
 		{
-			//TODO: MOVER A inputcontroller
-			if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+			if (_isMove)
 			{
-				if (!_steps.isPlaying)
-					_steps.Play();
+				_machineStandby.Stop();
+				if (GameController.Instance.MachineModeOn)
+				{
+					if (!_machineAcceleration.isPlaying)
+						_machineAcceleration.Play();
+				}
+				else
+					if (!_steps.isPlaying)
+						_steps.Play();
 			}
 			else
-				if (_steps.isPlaying)
+			{
+				if (_steps.isPlaying || _machineAcceleration.isPlaying)
+				{
 					_steps.Stop();
+					_machineAcceleration.Stop();
+				}
+				if (_isDrive)
+				{
+					if (!_machineOn.isPlaying)
+						if (!_machineStandby.isPlaying)
+							_machineStandby.Play();
+
+				}
+
+			}
 
 		}
 		#endregion
@@ -72,14 +96,26 @@ namespace Deforestation.Audio
 		private void SetMachineDriveEffect(bool startDriving)
 		{
 			if (startDriving)
+			{
 				_machineOn.Play();
+				_isDrive = true;
+			}
+
 			else
+			{
 				_machineOff.Play();
+				_isDrive = false;
+			}
+
 
 		}
 		private void ShootFX()
 		{
 			_shoot.Play();
+		}
+		private void Move()
+		{
+			_isMove = true;
 		}
 		#endregion
 

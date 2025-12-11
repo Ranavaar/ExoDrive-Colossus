@@ -10,6 +10,7 @@ namespace Deforestation
 		#region Fields
 		[SerializeField] private GameObject _fire;
 		private HealthSystem _health;
+		private bool _isDestroyed;
 		#endregion
 
 		#region Properties
@@ -26,6 +27,14 @@ namespace Deforestation
 
 		private void Die()
 		{
+			if (_isDestroyed)
+				return;
+			_isDestroyed = true;
+
+			Collider collider = GetComponent<Collider>();
+			if (collider != null)
+				collider.enabled = false;
+
 			Destroy(gameObject);
 
 			int veces = Random.Range(1, 5); // Genera un número aleatorio entre 1 y 4
@@ -41,12 +50,6 @@ namespace Deforestation
 			}
 		}
 
-		#endregion
-
-		#region Private Methods
-		#endregion
-
-		#region Public Methods
 		#endregion
 
 	}

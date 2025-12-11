@@ -1,10 +1,14 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Deforestation.Machine;
 using Deforestation.UI;
 using Deforestation.Recolectables;
 using Deforestation.Interaction;
 using Cinemachine;
 using System;
+using Deforastation.Player;
+using Deforastation.Inputs;
+
 
 namespace Deforestation
 {
@@ -12,13 +16,18 @@ namespace Deforestation
 	{
 		#region Properties
 		public MachineController MachineController => _machine;
+		public CharacterController CharacterController => _characterController;
+		public PlayerController PlayerController => _playerController;
 		public Inventory Inventory => _inventory;
 		public InteractionSystem InteractionSystem => _interactionSystem;
 		public TreeTerrainController TerrainController => _terrainController;
 		public Camera MainCamera;
+		public SystemInput InputSystem => _inputSystem;
+		public UIGameController UIController => _uiController;
 
 		//Events
 		public Action<bool> OnMachineModeChange;
+		public Action<bool> OnWarningPanelOn;
 
 		public bool MachineModeOn
 		{
@@ -36,10 +45,13 @@ namespace Deforestation
 
 		#region Fields
 		[Header("Player")]
-		[SerializeField] protected CharacterController _player;
+		[SerializeField] protected CharacterController _characterController;
+		[SerializeField] protected PlayerController _playerController;
 		[SerializeField] protected HealthSystem _playerHealth;
 		[SerializeField] protected Inventory _inventory;
 		[SerializeField] protected InteractionSystem _interactionSystem;
+		[Header("Input")]
+		[SerializeField] protected SystemInput _inputSystem; 
 
 		[Header("Camera")]
 		[SerializeField] protected CinemachineVirtualCamera _virtualCamera;
@@ -57,44 +69,61 @@ namespace Deforestation
 		#endregion
 
 		#region Unity Callbacks
-		// Start is called before the first frame update
 		void Start()
 		{
 			//UI Update
 			_playerHealth.OnHealthChanged += _uiController.UpdatePlayerHealth;
+			_playerHealth.OnDeath += Death;
 			_machine.HealthSystem.OnHealthChanged += _uiController.UpdateMachineHealth;
+			_machine.HealthSystem.OnDeath += Death;
 			MachineModeOn = false;
 		}
 
-		// Update is called once per frame
 		void Update()
 		{
+			if (_machine != null)
+			{
+				if (_machine.transform.position.y < 46)
+				{
+					Death();
+					return;
+				}
+			}
+
+			if (_characterController != null)
+			{
+				if (_characterController.transform.position.y < 49)
+				{
+					Death();
+					return;
+				}
+			}
 		}
 		#endregion
 
 		#region Public Methods
 		public void TeleportPlayer(Vector3 target)
 		{
-			_player.enabled = false;
-			_player.transform.position = target;
-			_player.enabled = true;
+			_characterController.enabled = false;
+			_characterController.transform.position = target;
+			_characterController.enabled = true;
 		}
 
 		internal void MachineMode(bool machineMode)
 		{
 			MachineModeOn = machineMode;
 			//Player
-			_player.gameObject.SetActive(!machineMode);
-			_player.enabled = !machineMode;
+			_characterController.gameObject.SetActive(!machineMode);
+			_characterController.enabled = !machineMode;
 
 			//Cursor + UI
 			if (machineMode)
 			{
 				//Start Driving
-				if (Inventory.HasResource(RecolectableType.HyperCrystal))
+				if (Inventory.HasResource(RecolectableType.DrivingCrystal))
 					_machine.StartDriving(machineMode);
 
-				_player.transform.parent = _machineFollow;
+				_characterController.transform.parent = _machineFollow;
 				_uiController.HideInteraction();
 				Cursor.lockState = CursorLockMode.None;
 				//Camera
@@ -110,7 +139,7 @@ namespace Deforestation
 				_machine.enabled = false;
 				_machine.WeaponController.enabled = false;
 				_machine.GetComponent<MachineMovement>().enabled = false;
-				_player.transform.parent = null;
+				_characterController.transform.parent = null;
 
 				//Camera
 				_virtualCamera.Follow = _playerFollow;
@@ -121,6 +150,10 @@ namespace Deforestation
 		#endregion
 
 		#region Private Methods
+		private void Death()
+		{			
+			SceneManager.LoadScene("DeathScene");
+		}
 		#endregion
 	}
 
