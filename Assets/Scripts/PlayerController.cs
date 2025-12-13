@@ -4,8 +4,6 @@ using UnityEngine;
 
 namespace Deforastation.Player
 {
-	[RequireComponent(typeof(CharacterController))]
-	[RequireComponent(typeof(HealthSystem))]
 	public class PlayerController : MonoBehaviour
 	{
 		#region Propierties

@@ -16,7 +16,8 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'Hips' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -24,7 +25,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -82,7 +83,1267 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: 1309_FBX(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VRaySun001
+      parentName: 1309_FBX(Clone)
+      position: {x: -240.4132, y: 306.724, z: 217.65839}
+      rotation: {x: -0.3212377, y: -0.34826398, z: -0.1284121, w: 0.8712227}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VRaySun001.Target
+      parentName: 1309_FBX(Clone)
+      position: {x: -1.1165015, y: 10.446378, z: -33.827393}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle01
+      parentName: 1309_FBX(Clone)
+      position: {x: 31.461256, y: 6, z: -2.77}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle02
+      parentName: 1309_FBX(Clone)
+      position: {x: 25.162333, y: 6, z: -2.6699998}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle03
+      parentName: 1309_FBX(Clone)
+      position: {x: 19.362333, y: 6, z: -2.6699998}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle04
+      parentName: 1309_FBX(Clone)
+      position: {x: 13.562334, y: 6, z: -2.6699998}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle05
+      parentName: 1309_FBX(Clone)
+      position: {x: 7.762334, y: 6, z: -2.6699998}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle06
+      parentName: 1309_FBX(Clone)
+      position: {x: 1.9623339, y: 6, z: -2.6699998}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle07
+      parentName: 1309_FBX(Clone)
+      position: {x: -3.837666, y: 6, z: -2.6699998}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle08
+      parentName: 1309_FBX(Clone)
+      position: {x: -9.637666, y: 6, z: -2.6699998}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle09
+      parentName: 1309_FBX(Clone)
+      position: {x: -15.437666, y: 6, z: -2.6699998}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle10
+      parentName: 1309_FBX(Clone)
+      position: {x: -21.237665, y: 6, z: -2.6699998}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle11
+      parentName: 1309_FBX(Clone)
+      position: {x: -27.037666, y: 6, z: -2.6699998}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle12
+      parentName: 1309_FBX(Clone)
+      position: {x: -33.33659, y: 6, z: -2.77}
+      rotation: {x: 1, y: 0, z: 0, w: -0.000000021855694}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Rectangle13
+      parentName: 1309_FBX(Clone)
+      position: {x: 28.062334, y: -0.000000013113404, z: -2.77}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle14
+      parentName: 1309_FBX(Clone)
+      position: {x: 22.262333, y: -0.000000013113404, z: -2.77}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle15
+      parentName: 1309_FBX(Clone)
+      position: {x: 16.462334, y: -0.000000013113404, z: -2.77}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle16
+      parentName: 1309_FBX(Clone)
+      position: {x: 10.6623335, y: -0.000000013113404, z: -2.77}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle17
+      parentName: 1309_FBX(Clone)
+      position: {x: 4.862334, y: -0.000000013113404, z: -2.77}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle18
+      parentName: 1309_FBX(Clone)
+      position: {x: -0.937666, y: -0.000000013113404, z: -2.77}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle19
+      parentName: 1309_FBX(Clone)
+      position: {x: -6.7376657, y: -0.000000013113404, z: -2.77}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle20
+      parentName: 1309_FBX(Clone)
+      position: {x: -12.537665, y: -0.000000013113404, z: -2.77}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle21
+      parentName: 1309_FBX(Clone)
+      position: {x: -18.337666, y: -0.000000013113404, z: -2.77}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle22
+      parentName: 1309_FBX(Clone)
+      position: {x: -24.137665, y: -0.000000013113404, z: -2.77}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle23
+      parentName: 1309_FBX(Clone)
+      position: {x: -29.937666, y: -0.000000013113404, z: -2.77}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle24
+      parentName: 1309_FBX(Clone)
+      position: {x: -36.73551, y: -0.000000013113404, z: -2.77}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle25
+      parentName: 1309_FBX(Clone)
+      position: {x: 34.86018, y: 0.00000006318054, z: -2.77}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle26
+      parentName: 1309_FBX(Clone)
+      position: {x: 34.86018, y: 0.00000041942832, z: -10.92}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle27
+      parentName: 1309_FBX(Clone)
+      position: {x: 34.86018, y: -1.5999997, z: -6.844999}
+      rotation: {x: 0.000000015454312, y: 0.7071067, z: -0.000000015454308, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle28
+      parentName: 1309_FBX(Clone)
+      position: {x: 34.86018, y: -1.5999993, z: -14.994998}
+      rotation: {x: 0.000000015454312, y: 0.7071067, z: -0.000000015454308, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle29
+      parentName: 1309_FBX(Clone)
+      position: {x: 34.86018, y: 0.0000007756761, z: -19.069998}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle30
+      parentName: 1309_FBX(Clone)
+      position: {x: 34.86018, y: -1.5999991, z: -23.144997}
+      rotation: {x: 0.000000015454312, y: 0.7071067, z: -0.000000015454308, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle31
+      parentName: 1309_FBX(Clone)
+      position: {x: 34.86018, y: 0.0000011319238, z: -27.219994}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle32
+      parentName: 1309_FBX(Clone)
+      position: {x: 34.86018, y: -1.5999986, z: -31.294994}
+      rotation: {x: 0.000000015454312, y: 0.7071067, z: -0.000000015454308, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle33
+      parentName: 1309_FBX(Clone)
+      position: {x: 34.86018, y: 0.0000013342428, z: -31.848515}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle34
+      parentName: 1309_FBX(Clone)
+      position: {x: 34.86018, y: -1.5999985, z: -35.923515}
+      rotation: {x: 0.000000015454312, y: 0.7071067, z: -0.000000015454308, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle35
+      parentName: 1309_FBX(Clone)
+      position: {x: 34.86018, y: 0.0000004151483, z: -38.748516}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle36
+      parentName: 1309_FBX(Clone)
+      position: {x: 34.86018, y: -1.5999993, z: -42.823513}
+      rotation: {x: 0.000000015454312, y: 0.7071067, z: -0.000000015454308, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle37
+      parentName: 1309_FBX(Clone)
+      position: {x: 34.86018, y: -0.0000005975935, z: -43.50611}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle38
+      parentName: 1309_FBX(Clone)
+      position: {x: 34.86018, y: -1.6000004, z: -47.581112}
+      rotation: {x: 0.000000015454312, y: 0.7071067, z: -0.000000015454308, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle39
+      parentName: 1309_FBX(Clone)
+      position: {x: 34.86018, y: -0.00000023697459, z: -51.75611}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle40
+      parentName: 1309_FBX(Clone)
+      position: {x: 34.86018, y: -1.6000001, z: -55.831112}
+      rotation: {x: 0.000000015454312, y: 0.7071067, z: -0.000000015454308, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle41
+      parentName: 1309_FBX(Clone)
+      position: {x: 34.86018, y: 0.00000012364434, z: -60.00611}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle42
+      parentName: 1309_FBX(Clone)
+      position: {x: -36.735508, y: 0.00000012364434, z: -60.00611}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle45
+      parentName: 1309_FBX(Clone)
+      position: {x: -36.735508, y: 0.0000007756761, z: -19.07}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle49
+      parentName: 1309_FBX(Clone)
+      position: {x: -36.935513, y: -1.5999993, z: -14.995}
+      rotation: {x: 0.000000015454312, y: 0.7071067, z: -0.000000015454308, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle55
+      parentName: 1309_FBX(Clone)
+      position: {x: -36.935513, y: -1.5999997, z: -6.845}
+      rotation: {x: 0.000000015454312, y: 0.7071067, z: -0.000000015454308, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle57
+      parentName: 1309_FBX(Clone)
+      position: {x: -36.735508, y: 0.00000041942832, z: -10.920001}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle58
+      parentName: 1309_FBX(Clone)
+      position: {x: -36.935513, y: -1.5999991, z: -23.144999}
+      rotation: {x: 0.000000015454312, y: 0.7071067, z: -0.000000015454308, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle59
+      parentName: 1309_FBX(Clone)
+      position: {x: -36.735508, y: 0.0000010160887, z: -24.57}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle60
+      parentName: 1309_FBX(Clone)
+      position: {x: -36.935513, y: -1.5999987, z: -28.644999}
+      rotation: {x: 0.000000015454312, y: 0.7071067, z: -0.000000015454308, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle61
+      parentName: 1309_FBX(Clone)
+      position: {x: -36.735508, y: 0.0000012543159, z: -30.019999}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle62
+      parentName: 1309_FBX(Clone)
+      position: {x: -36.935513, y: -1.5999986, z: -34.094997}
+      rotation: {x: 0.000000015454312, y: 0.7071067, z: -0.000000015454308, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle63
+      parentName: 1309_FBX(Clone)
+      position: {x: -36.735508, y: 0.0000014947285, z: -35.52}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle65
+      parentName: 1309_FBX(Clone)
+      position: {x: -36.735508, y: 0.0000018509763, z: -43.67}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle66
+      parentName: 1309_FBX(Clone)
+      position: {x: -36.93551, y: -1.599998, z: -47.745}
+      rotation: {x: 0.000000015454312, y: 0.7071067, z: -0.000000015454308, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle67
+      parentName: 1309_FBX(Clone)
+      position: {x: -36.735508, y: 0.000002207224, z: -51.82}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle70
+      parentName: 1309_FBX(Clone)
+      position: {x: -36.93551, y: -1.5999979, z: -55.895}
+      rotation: {x: 0.000000015454312, y: 0.7071067, z: -0.000000015454308, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle72
+      parentName: 1309_FBX(Clone)
+      position: {x: 25.162333, y: -6.2999997, z: -60.106113}
+      rotation: {x: 0.00000004371139, y: 0.0000000059624403, z: 1, w: -3.218589e-16}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Rectangle73
+      parentName: 1309_FBX(Clone)
+      position: {x: 19.362333, y: -6.2999997, z: -60.106113}
+      rotation: {x: 0.00000004371139, y: 0.0000000059624403, z: 1, w: -3.218589e-16}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Rectangle74
+      parentName: 1309_FBX(Clone)
+      position: {x: 13.562334, y: -6.2999997, z: -60.106113}
+      rotation: {x: 0.00000004371139, y: 0.0000000059624403, z: 1, w: -3.218589e-16}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Rectangle75
+      parentName: 1309_FBX(Clone)
+      position: {x: 7.762334, y: -6.2999997, z: -60.106113}
+      rotation: {x: 0.00000004371139, y: 0.0000000059624403, z: 1, w: -3.218589e-16}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Rectangle76
+      parentName: 1309_FBX(Clone)
+      position: {x: 1.9623339, y: -6.2999997, z: -60.106113}
+      rotation: {x: 0.00000004371139, y: 0.0000000059624403, z: 1, w: -3.218589e-16}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Rectangle77
+      parentName: 1309_FBX(Clone)
+      position: {x: -3.837666, y: -6.2999997, z: -60.106113}
+      rotation: {x: 0.00000004371139, y: 0.0000000059624403, z: 1, w: -3.218589e-16}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Rectangle78
+      parentName: 1309_FBX(Clone)
+      position: {x: -9.637666, y: -6.2999997, z: -60.106113}
+      rotation: {x: 0.00000004371139, y: 0.0000000059624403, z: 1, w: -3.218589e-16}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Rectangle79
+      parentName: 1309_FBX(Clone)
+      position: {x: -15.437666, y: -6.2999997, z: -60.106113}
+      rotation: {x: 0.00000004371139, y: 0.0000000059624403, z: 1, w: -3.218589e-16}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Rectangle80
+      parentName: 1309_FBX(Clone)
+      position: {x: -21.237665, y: -6.2999997, z: -60.106113}
+      rotation: {x: 0.00000004371139, y: 0.0000000059624403, z: 1, w: -3.218589e-16}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Rectangle81
+      parentName: 1309_FBX(Clone)
+      position: {x: -27.037666, y: -6.2999997, z: -60.106113}
+      rotation: {x: 0.00000004371139, y: 0.0000000059624403, z: 1, w: -3.218589e-16}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Rectangle92
+      parentName: 1309_FBX(Clone)
+      position: {x: -33.33659, y: -12.3, z: -60.00611}
+      rotation: {x: -1.0165751e-15, y: 1, z: -0.000000021855694, w: -0.00000004371139}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle93
+      parentName: 1309_FBX(Clone)
+      position: {x: 31.461256, y: -6.2999997, z: -60.00611}
+      rotation: {x: 0.00000004371139, y: 0.0000000059624403, z: 1, w: -3.218589e-16}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Rectangle94
+      parentName: 1309_FBX(Clone)
+      position: {x: -36.93551, y: -1.5999981, z: -39.594997}
+      rotation: {x: 0.000000015454312, y: 0.7071067, z: -0.000000015454308, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle95
+      parentName: 1309_FBX(Clone)
+      position: {x: -29.937666, y: 0.00000012364437, z: -60.00611}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle96
+      parentName: 1309_FBX(Clone)
+      position: {x: -24.137665, y: 0.0000001236444, z: -60.00611}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle97
+      parentName: 1309_FBX(Clone)
+      position: {x: -18.337666, y: 0.00000012364441, z: -60.00611}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle98
+      parentName: 1309_FBX(Clone)
+      position: {x: -12.537665, y: 0.00000012364443, z: -60.00611}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle99
+      parentName: 1309_FBX(Clone)
+      position: {x: -6.737665, y: 0.00000012364444, z: -60.00611}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle100
+      parentName: 1309_FBX(Clone)
+      position: {x: -0.937666, y: 0.00000012364447, z: -60.00611}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle101
+      parentName: 1309_FBX(Clone)
+      position: {x: 4.862334, y: 0.00000012364448, z: -60.00611}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle102
+      parentName: 1309_FBX(Clone)
+      position: {x: 10.6623335, y: 0.0000001236445, z: -60.00611}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle103
+      parentName: 1309_FBX(Clone)
+      position: {x: 16.462334, y: 0.00000012364453, z: -60.00611}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle104
+      parentName: 1309_FBX(Clone)
+      position: {x: 22.262333, y: 0.00000012364454, z: -60.00611}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle105
+      parentName: 1309_FBX(Clone)
+      position: {x: 28.062334, y: 0.00000012364455, z: -60.00611}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle43
+      parentName: 1309_FBX(Clone)
+      position: {x: -41.4419, y: 1.6452093, z: -20.356937}
+      rotation: {x: 0.000000015454312, y: -0.7071068, z: 0.000000015454312, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle106
+      parentName: 1309_FBX(Clone)
+      position: {x: -38.133255, y: 1.6452093, z: -23.498291}
+      rotation: {x: 1.0165751e-15, y: 1, z: -0.000000021855694, w: 0.00000004371139}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle107
+      parentName: 1309_FBX(Clone)
+      position: {x: -38.133255, y: 1.6452093, z: -17.048292}
+      rotation: {x: 1.0165751e-15, y: 1, z: -0.000000021855694, w: 0.00000004371139}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Group02
+      parentName: 1309_FBX(Clone)
+      position: {x: -0.9376611, y: 5.7099175, z: -49.363743}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Rectangle215
+      parentName: Group02
+      position: {x: -24.501484, y: 11.851054, z: -0.84158295}
+      rotation: {x: -0.000000053385083, y: 0.7071068, z: 0.7071068, w: -0.00000005338508}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle216
+      parentName: Group02
+      position: {x: -37.497837, y: -2.26667, z: -0.84158325}
+      rotation: {x: 0.50000006, y: -0.49999997, z: -0.49999994, w: 0.50000006}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle213
+      parentName: 1309_FBX(Clone)
+      position: {x: -25.439144, y: 4.868335, z: -61.214798}
+      rotation: {x: -1.7112914e-15, y: 1, z: -0.000000021855694, w: -0.0000000754979}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle214
+      parentName: 1309_FBX(Clone)
+      position: {x: -38.435497, y: 4.8683343, z: -47.097073}
+      rotation: {x: 0.000000015454312, y: -0.7071067, z: 0.000000015454308, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle217
+      parentName: 1309_FBX(Clone)
+      position: {x: -25.439144, y: -2.3099952, z: -61.214798}
+      rotation: {x: -1.7112914e-15, y: 1, z: -0.000000021855694, w: -0.0000000754979}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle218
+      parentName: 1309_FBX(Clone)
+      position: {x: 1.5108539, y: -2.3099952, z: -61.2148}
+      rotation: {x: -1.7112914e-15, y: 1, z: -0.000000021855694, w: -0.0000000754979}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle219
+      parentName: 1309_FBX(Clone)
+      position: {x: 28.460854, y: -2.3099952, z: -61.2148}
+      rotation: {x: -1.7112914e-15, y: 1, z: -0.000000021855694, w: -0.0000000754979}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle220
+      parentName: 1309_FBX(Clone)
+      position: {x: -0.9376611, y: -2.3099952, z: -47.097073}
+      rotation: {x: 0.000000015454312, y: -0.7071067, z: 0.000000015454308, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle221
+      parentName: 1309_FBX(Clone)
+      position: {x: -0.9376611, y: -2.3099952, z: -47.097073}
+      rotation: {x: 0.7071068, y: -0.000000015454306, z: -0.7071067, w: -0.00000001545431}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Line01
+      parentName: 1309_FBX(Clone)
+      position: {x: 25.996635, y: -12.25, z: -55.616806}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shape01
+      parentName: 1309_FBX(Clone)
+      position: {x: 28.435472, y: -12.3, z: -59.37779}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line02
+      parentName: 1309_FBX(Clone)
+      position: {x: -1.1960908, y: -12.25, z: -60.849277}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line03
+      parentName: 1309_FBX(Clone)
+      position: {x: -1.1960908, y: -12.3, z: -60.849277}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle222
+      parentName: 1309_FBX(Clone)
+      position: {x: -22.724243, y: -2.3099952, z: -61.2148}
+      rotation: {x: -1.7112914e-15, y: 1, z: -0.000000021855694, w: -0.0000000754979}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shape02
+      parentName: 1309_FBX(Clone)
+      position: {x: -30.310802, y: -12.3, z: -59.377792}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Line04
+      parentName: 1309_FBX(Clone)
+      position: {x: -27.871965, y: -12.25, z: -55.61681}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Line05
+      parentName: 1309_FBX(Clone)
+      position: {x: -17.483679, y: -12.25, z: -70.633606}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line06
+      parentName: 1309_FBX(Clone)
+      position: {x: -32.517845, y: -12.25, z: -74.10113}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line07
+      parentName: 1309_FBX(Clone)
+      position: {x: 23.50286, y: -11.835986, z: -45.41876}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line08
+      parentName: 1309_FBX(Clone)
+      position: {x: -17.483679, y: -12.3, z: -70.633606}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line09
+      parentName: 1309_FBX(Clone)
+      position: {x: -4.853709, y: -12.25, z: -74.8702}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line10
+      parentName: 1309_FBX(Clone)
+      position: {x: -3.9831114, y: -12.3, z: -74.906685}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line11
+      parentName: 1309_FBX(Clone)
+      position: {x: -35.770058, y: -12.25, z: -75.628525}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line12
+      parentName: 1309_FBX(Clone)
+      position: {x: -33.013184, y: -12.3, z: -71.39966}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line13
+      parentName: 1309_FBX(Clone)
+      position: {x: -32.35137, y: -12.3, z: -70.81557}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle44
+      parentName: 1309_FBX(Clone)
+      position: {x: -22.946249, y: -12.45, z: -70.42519}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle223
+      parentName: 1309_FBX(Clone)
+      position: {x: -12.023809, y: -12.45, z: -70.42519}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle224
+      parentName: 1309_FBX(Clone)
+      position: {x: -1.13078, y: -12.45, z: -70.42519}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle225
+      parentName: 1309_FBX(Clone)
+      position: {x: 9.818485, y: -12.45, z: -70.42519}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle226
+      parentName: 1309_FBX(Clone)
+      position: {x: 20.751272, y: -12.45, z: -70.42519}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle227
+      parentName: 1309_FBX(Clone)
+      position: {x: 29.28958, y: -12.45, z: -70.42519}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line15
+      parentName: 1309_FBX(Clone)
+      position: {x: 42.95156, y: -5.857169, z: -30.299591}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line16
+      parentName: 1309_FBX(Clone)
+      position: {x: 42.95156, y: -2.8218613, z: -29.01799}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line17
+      parentName: 1309_FBX(Clone)
+      position: {x: 46.38993, y: 0.049999997, z: -24.209585}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line18
+      parentName: 1309_FBX(Clone)
+      position: {x: 45.205467, y: -2.8718612, z: -25.812387}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line19
+      parentName: 1309_FBX(Clone)
+      position: {x: 42.9716, y: -5.907169, z: -29.758791}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line20
+      parentName: 1309_FBX(Clone)
+      position: {x: 42.9716, y: -8.901164, z: -31.101147}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line21
+      parentName: 1309_FBX(Clone)
+      position: {x: 42.223915, y: 0.049999997, z: -20.19615}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line22
+      parentName: 1309_FBX(Clone)
+      position: {x: 42.272354, y: 0, z: -23.969584}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shape03
+      parentName: 1309_FBX(Clone)
+      position: {x: 28.435472, y: 0, z: -3.39832}
+      rotation: {x: 8.659561e-17, y: 0.7071068, z: -0.7071068, w: 1.7431529e-32}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Line23
+      parentName: 1309_FBX(Clone)
+      position: {x: 25.996635, y: 0.049999997, z: -7.1593018}
+      rotation: {x: 8.659561e-17, y: 0.7071068, z: -0.7071068, w: 1.7431529e-32}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Line24
+      parentName: 1309_FBX(Clone)
+      position: {x: -1.1960908, y: 0, z: -1.9268352}
+      rotation: {x: -0.000000053385083, y: 0.7071068, z: 0.7071068, w: 0.000000053385083}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line25
+      parentName: 1309_FBX(Clone)
+      position: {x: -1.1960908, y: 0.049999997, z: -1.9268352}
+      rotation: {x: -0.000000053385083, y: 0.7071068, z: 0.7071068, w: 0.000000053385083}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line27
+      parentName: 1309_FBX(Clone)
+      position: {x: 35.95801, y: 0.049999997, z: 9.760041}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line28
+      parentName: 1309_FBX(Clone)
+      position: {x: -30.908443, y: -12.3, z: -4.9835258}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line30
+      parentName: 1309_FBX(Clone)
+      position: {x: -11.544272, y: 0.049999997, z: 13.942198}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line31
+      parentName: 1309_FBX(Clone)
+      position: {x: -24.684322, y: 0, z: 13.047146}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line32
+      parentName: 1309_FBX(Clone)
+      position: {x: 33.922382, y: 0.049999997, z: 9.422581}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line33
+      parentName: 1309_FBX(Clone)
+      position: {x: 35.95801, y: 0, z: 9.760041}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line34
+      parentName: 1309_FBX(Clone)
+      position: {x: 40.734035, y: 0.049999997, z: 12.860328}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line35
+      parentName: 1309_FBX(Clone)
+      position: {x: 37.62771, y: 0, z: 7.4776697}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle46
+      parentName: 1309_FBX(Clone)
+      position: {x: 28.91187, y: -0.099999994, z: 7.236246}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle228
+      parentName: 1309_FBX(Clone)
+      position: {x: 17.98932, y: -0.099999994, z: 7.236246}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle229
+      parentName: 1309_FBX(Clone)
+      position: {x: 7.070571, y: -0.099999994, z: 7.236246}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle230
+      parentName: 1309_FBX(Clone)
+      position: {x: -3.8732982, y: -0.099999994, z: 7.236246}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle231
+      parentName: 1309_FBX(Clone)
+      position: {x: -14.765517, y: -0.099999994, z: 7.236246}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle232
+      parentName: 1309_FBX(Clone)
+      position: {x: -25.723286, y: -0.099999994, z: 7.236246}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line37
+      parentName: 1309_FBX(Clone)
+      position: {x: -47.842712, y: -5.857169, z: -32.686443}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line38
+      parentName: 1309_FBX(Clone)
+      position: {x: -47.842712, y: -2.8218608, z: -31.392519}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line39
+      parentName: 1309_FBX(Clone)
+      position: {x: -51.044823, y: 0.049999997, z: -26.186255}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line40
+      parentName: 1309_FBX(Clone)
+      position: {x: -50.01601, y: -2.87186, z: -28.121674}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line41
+      parentName: 1309_FBX(Clone)
+      position: {x: -47.663197, y: -5.90717, z: -32.13948}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line42
+      parentName: 1309_FBX(Clone)
+      position: {x: -47.79733, y: -8.90116, z: -33.4404}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line43
+      parentName: 1309_FBX(Clone)
+      position: {x: -48.126923, y: 0.049999997, z: -23.085415}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line44
+      parentName: 1309_FBX(Clone)
+      position: {x: -41.191586, y: 0, z: -25.463783}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line45
+      parentName: 1309_FBX(Clone)
+      position: {x: 49.848953, y: 0, z: 1.7641379}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line46
+      parentName: 1309_FBX(Clone)
+      position: {x: 49.872494, y: 0, z: 7.2080326}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle51
+      parentName: 1309_FBX(Clone)
+      position: {x: -54.982536, y: -10.849999, z: -33.99435}
+      rotation: {x: -1.7112914e-15, y: 1, z: -0.000000021855694, w: -0.0000000754979}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle48
+      parentName: 1309_FBX(Clone)
+      position: {x: 45.97256, y: -11.119434, z: -31.702703}
+      rotation: {x: -1.7112914e-15, y: 1, z: -0.000000021855694, w: -0.0000000754979}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle47
+      parentName: 1309_FBX(Clone)
+      position: {x: 42.972984, y: -12.3, z: -35.601303}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line14
+      parentName: 1309_FBX(Clone)
+      position: {x: 43.57955, y: -12.25, z: -39.299896}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line36
+      parentName: 1309_FBX(Clone)
+      position: {x: -53.92441, y: -12.25, z: -58.511143}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line47
+      parentName: 1309_FBX(Clone)
+      position: {x: -60.09628, y: -12.25, z: -71.56634}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line48
+      parentName: 1309_FBX(Clone)
+      position: {x: -54.27107, y: -12.3, z: -60.372185}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle50
+      parentName: 1309_FBX(Clone)
+      position: {x: -46.013447, y: -12.25, z: -37.911816}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line49
+      parentName: 1309_FBX(Clone)
+      position: {x: -46.542973, y: -12.25, z: -41.629276}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line51
+      parentName: 1309_FBX(Clone)
+      position: {x: 36.119236, y: -12.383367, z: -39.795258}
+      rotation: {x: 0.000000015454312, y: 0.7071067, z: -0.000000015454308, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line52
+      parentName: 1309_FBX(Clone)
+      position: {x: 37.319237, y: -0.0833667, z: -19.820784}
+      rotation: {x: 0.000000015454312, y: -0.70710665, z: 0.000000015454306, w: 0.7071069}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line54
+      parentName: 1309_FBX(Clone)
+      position: {x: -27.87197, y: 0.049999997, z: -7.1593018}
+      rotation: {x: 0.00000028378975, y: 0.7071068, z: 0.7071068, w: -0.00000028378975}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shape05
+      parentName: 1309_FBX(Clone)
+      position: {x: -30.310808, y: 0, z: -3.3983202}
+      rotation: {x: 0.000000115202326, y: 0.7071068, z: 0.7071068, w: -0.000000115202326}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line26
+      parentName: 1309_FBX(Clone)
+      position: {x: -44.989086, y: 0, z: -10.2280445}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line53
+      parentName: 1309_FBX(Clone)
+      position: {x: -45.05829, y: 0, z: -61.73077}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line50
+      parentName: 1309_FBX(Clone)
+      position: {x: -71.74756, y: -12.25, z: -70.57299}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line55
+      parentName: 1309_FBX(Clone)
+      position: {x: 58.067383, y: -12.25, z: -76.94836}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line56
+      parentName: 1309_FBX(Clone)
+      position: {x: 57.16415, y: 0.049999997, z: 12.67249}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line57
+      parentName: 1309_FBX(Clone)
+      position: {x: -62.637577, y: 0, z: 20.229118}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line58
+      parentName: 1309_FBX(Clone)
+      position: {x: -3.4953194, y: -0.14999999, z: 15.160013}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line59
+      parentName: 1309_FBX(Clone)
+      position: {x: -3.4953194, y: 0.01, z: 15.160013}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line60
+      parentName: 1309_FBX(Clone)
+      position: {x: -3.4953194, y: 0, z: 15.160013}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line61
+      parentName: 1309_FBX(Clone)
+      position: {x: -7.1018443, y: -12.45, z: -77.257645}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line62
+      parentName: 1309_FBX(Clone)
+      position: {x: -20.12005, y: -12.408828, z: -74.839096}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line63
+      parentName: 1309_FBX(Clone)
+      position: {x: 50.29957, y: 0.049999997, z: 11.090446}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line64
+      parentName: 1309_FBX(Clone)
+      position: {x: 51.211655, y: -5.3582616, z: -33.208458}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle52
+      parentName: 1309_FBX(Clone)
+      position: {x: -1.112666, y: -12.3, z: -31.563055}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle233
+      parentName: 1309_FBX(Clone)
+      position: {x: -1.112666, y: 0, z: -31.563055}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle234
+      parentName: 1309_FBX(Clone)
+      position: {x: -1.112666, y: 11.5, z: -31.563055}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow01
+      parentName: 1309_FBX(Clone)
+      position: {x: -32.14337, y: -12.3, z: -60.05611}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow02
+      parentName: 1309_FBX(Clone)
+      position: {x: -32.14337, y: -4, z: -60.05611}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow03
+      parentName: 1309_FBX(Clone)
+      position: {x: -27.03767, y: -4, z: -60.05611}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow04
+      parentName: 1309_FBX(Clone)
+      position: {x: -27.03767, y: -11.3, z: -60.05611}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow05
+      parentName: 1309_FBX(Clone)
+      position: {x: -21.23767, y: -11.3, z: -60.05611}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow06
+      parentName: 1309_FBX(Clone)
+      position: {x: -21.23767, y: -4, z: -60.05611}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow07
+      parentName: 1309_FBX(Clone)
+      position: {x: -15.437671, y: -4, z: -60.05611}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow08
+      parentName: 1309_FBX(Clone)
+      position: {x: -9.6376705, y: -4, z: -60.05611}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow09
+      parentName: 1309_FBX(Clone)
+      position: {x: -3.83767, y: -4, z: -60.05611}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow10
+      parentName: 1309_FBX(Clone)
+      position: {x: 1.9623296, y: -4, z: -60.05611}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow11
+      parentName: 1309_FBX(Clone)
+      position: {x: 7.7623296, y: -4, z: -60.05611}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow12
+      parentName: 1309_FBX(Clone)
+      position: {x: 13.562328, y: -4, z: -60.05611}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow13
+      parentName: 1309_FBX(Clone)
+      position: {x: 19.36233, y: -4, z: -60.05611}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow14
+      parentName: 1309_FBX(Clone)
+      position: {x: 19.36233, y: -11.3, z: -60.05611}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow15
+      parentName: 1309_FBX(Clone)
+      position: {x: 25.162329, y: -11.3, z: -60.05611}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow16
+      parentName: 1309_FBX(Clone)
+      position: {x: 25.162329, y: -4, z: -60.05611}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow17
+      parentName: 1309_FBX(Clone)
+      position: {x: -9.6376705, y: -12.3, z: -60.05611}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow18
+      parentName: 1309_FBX(Clone)
+      position: {x: 7.762329, y: -12.3, z: -60.05611}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow19
+      parentName: 1309_FBX(Clone)
+      position: {x: 30.063095, y: -12.3, z: -60.05611}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow20
+      parentName: 1309_FBX(Clone)
+      position: {x: 30.063095, y: -4, z: -60.056118}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow21
+      parentName: 1309_FBX(Clone)
+      position: {x: 13.562328, y: -12.3, z: -60.05611}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow22
+      parentName: 1309_FBX(Clone)
+      position: {x: 1.962329, y: -12.3, z: -60.05611}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow23
+      parentName: 1309_FBX(Clone)
+      position: {x: -3.8376708, y: -12.3, z: -60.05611}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow24
+      parentName: 1309_FBX(Clone)
+      position: {x: -15.437671, y: -12.3, z: -60.05611}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow26
+      parentName: 1309_FBX(Clone)
+      position: {x: -36.78551, y: -12.3, z: -37.87023}
+      rotation: {x: 0.000000015454312, y: 0.7071068, z: -0.000000015454312, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow27
+      parentName: 1309_FBX(Clone)
+      position: {x: -36.78551, y: 0, z: -27.06826}
+      rotation: {x: 0.000000015454312, y: 0.7071068, z: -0.000000015454312, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow28
+      parentName: 1309_FBX(Clone)
+      position: {x: 34.91018, y: -0.00000015040226, z: -24.231897}
+      rotation: {x: 0.000000015454312, y: 0.7071068, z: -0.000000015454312, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow29
+      parentName: 1309_FBX(Clone)
+      position: {x: 34.91018, y: -12.3, z: -34.4231}
+      rotation: {x: 0.000000015454312, y: 0.7071068, z: -0.000000015454312, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow30
+      parentName: 1309_FBX(Clone)
+      position: {x: -32.14337, y: 0, z: -2.7200003}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow31
+      parentName: 1309_FBX(Clone)
+      position: {x: -32.14337, y: 6.565493, z: -2.7200003}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow32
+      parentName: 1309_FBX(Clone)
+      position: {x: -27.03767, y: 6.565493, z: -2.7200003}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow33
+      parentName: 1309_FBX(Clone)
+      position: {x: -27.03767, y: 1, z: -2.7200003}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow34
+      parentName: 1309_FBX(Clone)
+      position: {x: -21.23767, y: 1, z: -2.7200003}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow35
+      parentName: 1309_FBX(Clone)
+      position: {x: -21.23767, y: 6.565493, z: -2.7200003}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow36
+      parentName: 1309_FBX(Clone)
+      position: {x: -15.437671, y: 6.565493, z: -2.7200003}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow37
+      parentName: 1309_FBX(Clone)
+      position: {x: -9.6376705, y: 6.565493, z: -2.7200003}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow38
+      parentName: 1309_FBX(Clone)
+      position: {x: -3.83767, y: 6.565493, z: -2.7200003}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow39
+      parentName: 1309_FBX(Clone)
+      position: {x: 1.9623296, y: 6.565493, z: -2.7200003}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow40
+      parentName: 1309_FBX(Clone)
+      position: {x: 7.7623296, y: 6.565493, z: -2.7200003}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow41
+      parentName: 1309_FBX(Clone)
+      position: {x: 13.562328, y: 6.565493, z: -2.7200003}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow42
+      parentName: 1309_FBX(Clone)
+      position: {x: 19.36233, y: 6.565493, z: -2.7200003}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow43
+      parentName: 1309_FBX(Clone)
+      position: {x: 19.36233, y: 1, z: -2.7200003}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow44
+      parentName: 1309_FBX(Clone)
+      position: {x: 25.162329, y: 1, z: -2.7200003}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow45
+      parentName: 1309_FBX(Clone)
+      position: {x: 25.162329, y: 6.565493, z: -2.7200003}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow46
+      parentName: 1309_FBX(Clone)
+      position: {x: -9.6376705, y: 0, z: -2.7200003}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow47
+      parentName: 1309_FBX(Clone)
+      position: {x: 7.762329, y: 0, z: -2.7200003}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow48
+      parentName: 1309_FBX(Clone)
+      position: {x: 30.063095, y: 0, z: -2.7200003}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow49
+      parentName: 1309_FBX(Clone)
+      position: {x: 30.063095, y: 6.565493, z: -2.720005}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow50
+      parentName: 1309_FBX(Clone)
+      position: {x: 13.562328, y: 0, z: -2.7200003}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow51
+      parentName: 1309_FBX(Clone)
+      position: {x: 1.962329, y: 0, z: -2.7200003}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow52
+      parentName: 1309_FBX(Clone)
+      position: {x: -3.8376708, y: 0, z: -2.7200003}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow53
+      parentName: 1309_FBX(Clone)
+      position: {x: -15.437671, y: 0, z: -2.7200003}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow54
+      parentName: 1309_FBX(Clone)
+      position: {x: -39.45976, y: -1.2983706, z: -17.198292}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle53
+      parentName: 1309_FBX(Clone)
+      position: {x: -39.188705, y: 4.2, z: -20.373291}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rectangle235
+      parentName: 1309_FBX(Clone)
+      position: {x: -39.188705, y: -1.2983706, z: -20.373291}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow55
+      parentName: 1309_FBX(Clone)
+      position: {x: 45.97256, y: -12.3, z: -31.752705}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow57
+      parentName: 1309_FBX(Clone)
+      position: {x: -54.982536, y: -12.3, z: -34.044353}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow58
+      parentName: 1309_FBX(Clone)
+      position: {x: -51.380257, y: -12.3, z: -34.044353}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow59
+      parentName: 1309_FBX(Clone)
+      position: {x: -49.821655, y: -12.3, z: -34.044353}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow60
+      parentName: 1309_FBX(Clone)
+      position: {x: -47.971783, y: -12.3, z: -34.044353}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow61
+      parentName: 1309_FBX(Clone)
+      position: {x: -46.382862, y: -12.092778, z: -34.044353}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow62
+      parentName: 1309_FBX(Clone)
+      position: {x: -45.18286, y: -12.092778, z: -34.044353}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow63
+      parentName: 1309_FBX(Clone)
+      position: {x: -45.18286, y: -10.451489, z: -34.044353}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow64
+      parentName: 1309_FBX(Clone)
+      position: {x: -46.382862, y: -10.451489, z: -34.044353}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FixedWindow65
+      parentName: 1309_FBX(Clone)
+      position: {x: -39.007126, y: -12.3, z: -34.044353}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line65
+      parentName: 1309_FBX(Clone)
+      position: {x: -57.796288, y: -5.0163813, z: -27.744768}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line66
+      parentName: 1309_FBX(Clone)
+      position: {x: -41.6419, y: -0.0833667, z: -22.097164}
+      rotation: {x: 0.000000015454312, y: -0.70710665, z: 0.000000015454306, w: 0.7071069}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line67
+      parentName: 1309_FBX(Clone)
+      position: {x: -39.194565, y: -12.383366, z: -42.124638}
+      rotation: {x: 0.000000015454313, y: 0.7071066, z: -0.000000015454306, w: 0.70710695}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Line068
+      parentName: 1309_FBX(Clone)
+      position: {x: -17.038572, y: -12.377143, z: -82.4372}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -93,13 +1354,13 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0

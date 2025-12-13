@@ -73,7 +73,7 @@ namespace Deforestation
 		void Start()
 		{
 			//UI Update
-			_playerHealth.OnHealthChanged += _uiController.UpdatePlayerHealth;
+			//_playerHealth.OnHealthChanged += _uiController.UpdatePlayerHealth;
 			_playerHealth.OnDeath += Death;
 			_machine.HealthSystem.OnHealthChanged += _uiController.UpdateMachineHealth;
 			_machine.HealthSystem.OnDeath += Death;
