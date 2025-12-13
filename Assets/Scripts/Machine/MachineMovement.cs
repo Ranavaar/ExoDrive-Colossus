@@ -29,7 +29,7 @@ namespace Deforestation.Machine
 		{
 			_isMove = false;
 			_rb = GetComponent<Rigidbody>();
-			GameController.Instance.InputSystem.OnMove += Move;
+			//GameController.Instance.InputSystem.OnMove += Move;
 		}
 
 		private void Update()
@@ -101,7 +101,7 @@ namespace Deforestation.Machine
 				if (other.TryGetComponent<Collider>(out Collider collider))
 					collider.enabled = false;
 
-				GameController.Instance.TerrainController.DestroyTree(index, other.transform.position);
+				//GameController.Instance.TerrainController.DestroyTree(index, other.transform.position);
 			}
 
 
